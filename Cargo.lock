@@ -574,9 +574,9 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "3.0.0-rc.0"
+version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "79b70f999da60e6619a29b131739d2211ed4d4301f40372e94a8081422e9d6c7"
+checksum = "d17bf219fcd37199b9a29e00ba65dfb8cd5b2688b7297ec14ff829c40ac50ca9"
 dependencies = [
  "atty",
  "bitflags",
@@ -591,10 +591,19 @@ dependencies = [
 ]
 
 [[package]]
-name = "clap_derive"
-version = "3.0.0-rc.0"
+name = "clap_complete"
+version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fe8c0f28022faaef0387fa54f8e33fee22b804a88bbd91303197da2ff8ca6a5d"
+checksum = "60d123fbea4c5d9799cffd44051e2125c880efd23b3b7c529baf3ea5508c8736"
+dependencies = [
+ "clap 3.0.0",
+]
+
+[[package]]
+name = "clap_derive"
+version = "3.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e1b9752c030a14235a0bd5ef3ad60a1dcac8468c30921327fc8af36b20c790b9"
 dependencies = [
  "heck",
  "proc-macro-error",
@@ -605,11 +614,12 @@ dependencies = [
 
 [[package]]
 name = "clap_generate"
-version = "3.0.0-rc.0"
+version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9c1f113bec1988b503f7a79f23e31ca6006aa25a9a9a0f49105110f1d336464d"
+checksum = "6860a7a7cdb85c6f6256a3352177ea2e44028187bd8d1b2020352c43a2add3cf"
 dependencies = [
- "clap 3.0.0-rc.0",
+ "clap 3.0.0",
+ "clap_complete",
 ]
 
 [[package]]
@@ -1420,7 +1430,7 @@ dependencies = [
  "bytesize",
  "chrono",
  "chrono-humanize",
- "clap 3.0.0-rc.0",
+ "clap 3.0.0",
  "clap_generate",
  "futures",
  "get_if_addrs",
