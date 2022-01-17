@@ -18,7 +18,7 @@ panic = 'abort'
 
 [dependencies]
 actix-web = "4.0.0-beta.8"
-actix-files = "0.6.0-beta.6"
+actix-files = "0.6.0-beta.14"
 actix-multipart = "0.4.0-beta.5"
 actix-web-httpauth = "0.6.0-beta.2"
 maud = "0.23"
@@ -29,8 +29,8 @@ port_check = "0.1"
 bytesize = "1"
 nanoid = "0.4"
 alphanumeric-sort = "1"
-clap = { version = "3.0.5", features = ["derive", "cargo", "wrap_help"] }
-clap_complete = "3.0.2"
+clap = { version = "3.0.7", features = ["derive", "cargo", "wrap_help"] }
+clap_complete = "3.0.3"
 chrono = "0.4"
 chrono-humanize = "0.2"
 serde = { version = "1", features = ["derive"] }
