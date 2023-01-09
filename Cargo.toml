@@ -78,4 +78,4 @@ select = "0.5"
 url = "2"
 
 [build-dependencies]
-grass = "0.11"
+grass = "0.12"
